@@ -1,1 +1,16 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_forward" id="34" x="237" y="59">
+    <next>
+      <block type="robot_delay" id="36" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="43">
+            <field name="NUM">1000</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_stop" id="53"></block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
