@@ -20,9 +20,9 @@
           <block type="movement_forward" id="6"></block>
         </statement>
         <next>
-          <block type="robot_delay" id="8" inline="true">
+          <block type="robot_delay" id="7" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="15">
+              <block type="math_number" id="8">
                 <field name="NUM">200</field>
               </block>
             </value>
