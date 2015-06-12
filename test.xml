@@ -1,16 +1,25 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="78" inline="false" x="241" y="-2">
-    <mutation else="1"></mutation>
-    <value name="IF0">
-      <block type="sensor_object" id="136">
-        <field name="OBJECT">LEFTFRONT</field>
+  <block type="controls_repeat" id="153" inline="true" x="244" y="-74">
+    <value name="TIMES">
+      <block type="math_number" id="160">
+        <field name="NUM">1000000</field>
       </block>
     </value>
-    <statement name="DO0">
-      <block type="movement_stop" id="146"></block>
-    </statement>
-    <statement name="ELSE">
-      <block type="movement_forward" id="34"></block>
+    <statement name="DO">
+      <block type="controls_if" id="78" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="sensor_object" id="136">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_stop" id="146"></block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="34"></block>
+        </statement>
+      </block>
     </statement>
   </block>
 </xml>
